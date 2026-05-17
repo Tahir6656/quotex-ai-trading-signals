@@ -1,0 +1,40 @@
+{
+  "trading_pairs": ["EURUSD", "GBPUSD", "USDJPY", "BTCUSD"],
+  "timeframe": "5m",
+  "indicators": {
+    "rsi": {
+      "enabled": true,
+      "period": 14,
+      "overbought": 70,
+      "oversold": 30
+    },
+    "macd": {
+      "enabled": true,
+      "fast_period": 12,
+      "slow_period": 26,
+      "signal_period": 9
+    },
+    "moving_averages": {
+      "enabled": true,
+      "short_period": 20,
+      "long_period": 50
+    },
+    "bollinger_bands": {
+      "enabled": true,
+      "period": 20,
+      "std_dev": 2
+    }
+  },
+  "signal_weights": {
+    "rsi": 0.25,
+    "macd": 0.3,
+    "moving_averages": 0.25,
+    "bollinger_bands": 0.2
+  },
+  "min_confidence": 0.6,
+  "risk_management": {
+    "stop_loss_percent": 2.0,
+    "take_profit_percent": 5.0,
+    "max_position_size": 0.05
+  }
+}
